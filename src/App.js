@@ -6,8 +6,8 @@ import "./style/global.css";
 function App() {
   return (
         <Routes>
-          <Route index path="/page/:countPage" element={<AppMain />} />
-          <Route path="/" element={<AppMain  />} />
+          <Route index path="/react-redux-jsonplaceholder/page/:countPage" element={<AppMain />} />
+          <Route path="/react-redux-jsonplaceholder" element={<AppMain  />} />
         </Routes>
   );
 }
