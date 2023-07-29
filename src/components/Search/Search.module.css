@@ -1,0 +1,32 @@
+.search{
+    position: relative;
+    max-width: 630px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 23px;
+}
+.search__input{
+    max-width: 630px;
+    width: 100%;
+    background: #5A5C66;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    line-height: 20px;
+    color: #B2B7BF;
+    font-weight: 400;
+    padding: 14px 45px 14px 26px;
+    position: relative;
+}
+.search__btn{
+    background: none;
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 100%;
+    max-width: 45px;
+    height: 100%;
+    border: none;
+    z-index: 5;
+    cursor: pointer;
+}
