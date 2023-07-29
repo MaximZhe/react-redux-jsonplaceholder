@@ -39,7 +39,7 @@ const Pagination = () => {
 
   return (
     <div className={style.pagination}>
-      <Link  to={`/page/${countPage - 1}`}>
+      <Link  to={`/react-redux-jsonplaceholder/page/${countPage - 1}`}>
       <MyButton onClick={prevPage} className={style.pagination__prev} 
       disabled={countPage === 1 ? true : false}>
         Назад
@@ -47,7 +47,7 @@ const Pagination = () => {
       </Link>
       <div>
       {countPagesArray.map((p) => (
-        <Link key={p} to={`/page/${p}`}>
+        <Link key={p} to={`/react-redux-jsonplaceholder/page/${p}`}>
           <MyButton
             key={p}
             className={
@@ -63,7 +63,7 @@ const Pagination = () => {
       ))}
       </div>
       
-      <Link to={`/page/${countPage + 1}`}>
+      <Link to={`/react-redux-jsonplaceholder/page/${countPage + 1}`}>
       <MyButton onClick={nextPage} className={style.pagination__next} 
       disabled={countPage === 10 ? true : false}>
         Далее
