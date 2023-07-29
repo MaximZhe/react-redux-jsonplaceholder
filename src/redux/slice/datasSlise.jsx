@@ -13,8 +13,9 @@ const initialState = {
 export const getPosts = createAsyncThunk(
   "datas/getPosts",
   async ({ limit, page }, { rejectWithValue, dispatch }) => {
+    const url = 'https:jsonplaceholder.typicode.com/posts';
     const response = await axios.get(
-      `https:jsonplaceholder.typicode.com/posts`,
+      url,
       {
         params: {
           _limit: limit,
